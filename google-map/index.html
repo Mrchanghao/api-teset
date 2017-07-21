@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>구글 API</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="text-center">위치를 입력하세요</h2>
+        <form class=" location-form">
+            <input type="text" class="form-control form-control-lg location-input">
+            <button type="submit" class="btn btn-primary btn-block">입력</button>
+        </form>
+        <div class="card-block" id="formatted-address"></div>
+        <div class="card-block" id="address-components"></div>
+        <div class="card-block" id="geometry"></div>
+    </div>
+    <script defer src="google.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+
+</html>
